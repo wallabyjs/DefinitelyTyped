@@ -15,6 +15,10 @@ declare namespace JQueryUILayout {
         closable?: boolean;
         resizable?: boolean;
         slidable?: boolean;
+        livePaneResizing?: boolean;
+        maskContents?: boolean,
+        resizeWithWindowDelay?: any,
+        resizeWithWindowMaxDelay?: any,
         paneSelector?: string;
         contentSelector?: string;
         contentIgnoreSelector?: string;
@@ -475,6 +479,8 @@ declare namespace JQueryUILayout {
         addPinBtn(selector: string, pane: string): JQuery;
         allowOverflow(elemOrPane: HTMLElement | string): JQuery;
         resetOverflow(elemOrPane: HTMLElement | string): JQuery;
+
+        destroy(): any;
     }
 }
 
